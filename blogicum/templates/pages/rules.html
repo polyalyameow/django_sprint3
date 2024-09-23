@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+{% block title %}
+Наши правила
+{% endblock %}
+
+{% block content %}
+<h1>Наши правила</h1>  
+{% for rule in rules %}
+<p>
+    <b>{{ rule.key }}</b>
+    {{ rule.value }}
+</p>
+
+{% endfor %}
+{% endblock %}
